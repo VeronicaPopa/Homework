@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pizza order</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Pizza Order</legend>
+        <label for="name"> Your name: </label>
+        <input type="text" id="name" name="nume" />
+        <br />
+        <br />
+        <label for="email">Your email: </label>
+        <input type="email" id="email" name="email" />
+        <br />
+        <br />
+        <div>
+          Topping:
+          <input type="radio" name="topping" value="Supreme" /> Supreme
+          <input type="radio" name="topping" value="Vegetarian" /> Vegetarian
+          <input type="radio" name="topping" value="Hawaian" /> Hawaian
+        </div>
+        <br />
+        <br />
+        <div>
+          Sauce:
+          <select name="sauce">
+            <option value="tomato">Tomato</option>
+            <option value="mayonnaise">Mayonnaise</option>
+            <option value="bechamel">Bechamel</option>
+          </select>
+        </div>
+        <br />
+        <br />
+        <div>
+          Extras:
+          <input type="checkbox" id="cheese" name="extras1" value="cheese" />
+          <label for="cheese">Cheese</label>
+          <input type="checkbox" id="onions" name="extras2" value="onions" />
+          <label for="onions">Onions</label>
+          <input type="checkbox" id="olives" name="extras3" value="olives" />
+          <label for="olives">Olives</label>
+        </div>
+        <br />
+        <br />
+        <div>
+          Delivery instructions:<br />
+          <textarea name="message" cols="50" rows="10"></textarea>
+        </div>
+        <br />
+        <br />
+        <input type="submit" value="Send order" />
+      </fieldset>
+    </form>
+  </body>
+</html>
