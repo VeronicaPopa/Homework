@@ -1,0 +1,61 @@
+.yellow {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.blue {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.green {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.page {
+    width: 600px;
+    height: 600px;
+    background-color: gainsboro;
+    position: fixed;
+}
+
+
+/*Patratul galben porneste din mijlocul paginii
+
+.yellow {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+*/
+
+
+/* Patratul galben se afla in mijlocul paginii
+
+.yellow {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+*/
