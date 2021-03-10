@@ -1,0 +1,41 @@
+.container {
+    width: 1050px;
+    height: 400px;
+}
+
+body {
+    font-size: 20px;
+    width: 1150px;
+}
+
+ul {
+    float: left;
+    width: 200px;
+    clear: both;
+}
+
+li {
+    padding: 3px;
+    color: palevioletred;
+}
+
+section:first-of-type {
+    height: 70px;
+    margin-left: 250px;
+}
+
+section:nth-of-type(2) {
+    height: 280px;
+    margin-left: 250px;
+}
+
+section:nth-of-type(3) {
+    height: 70px;
+    margin-left: 250px;
+}
+
+footer {
+    margin: 30px;
+    font-size: 15px;
+    text-align: center;
+}
