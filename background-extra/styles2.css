@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+.image {
+    position: relative;
+    width: 1500px;
+    height: 800px;
+    background-image: url(photographer2.jpeg);
+    background-size: 500px 375px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gradient {
+    background: linear-gradient(red, blue) 100%;
+    width: 100%;
+}
+
+h1 {
+    position: absolute;
+    margin-left: 570px;
+    margin-top: 250px;
+    font-size: 60px;
+    color: white;
+}
+
+h4 {
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 615px;
+    font-size: 25px;
+    color: white;
+}
+
+button {
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 720px;
+}
