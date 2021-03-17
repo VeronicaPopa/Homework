@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    background-color: #333;
+    display: flex;
+}
+
+ul li {
+    color: white;
+    padding: 10px;
+}
+
+ul li:first-child {
+    background-color: green;
+}
+
+ul li:last-child {
+    transform: rotate(90deg);
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .news,
+    .contact,
+    .about {
+        display: none;
+    }
+    ul li:last-child {
+        display: block;
+        margin-left: 70%;
+    }
+}
