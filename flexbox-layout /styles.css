@@ -2,19 +2,17 @@
     box-sizing: border-box;
 }
 
-html {
-    height: 100%;
-}
-
 body {
-    height: 100%;
+    padding: 50px;
 }
 
-.main {
-    height: 100%;
+.container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    width: 610px;
+    height: 500px;
+    color: white;
+    margin: 0 auto;
 }
 
 .left-tiles {
@@ -74,12 +72,4 @@ body {
     height: 100%;
     background-color: green;
     padding: 20px;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    width: 610px;
-    height: 500px;
-    color: white;
 }
