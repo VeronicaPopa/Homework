@@ -1,0 +1,39 @@
+.container {
+    width: 800px;
+    height: 700px;
+    border: 1px solid black;
+    box-shadow: 0 0 6px 2px black;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.animation {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% {
+        background-color: red;
+        margin-left: 0;
+    }
+    25% {
+        background-color: yellow;
+        margin-left: 600px;
+        margin-top: 0;
+    }
+    50% {
+        background-color: blue;
+        margin-top: 500px;
+        margin-left: 600px;
+    }
+    75% {
+        background-color: green;
+        margin-top: 500px;
+        margin-left: 0;
+    }
+}
