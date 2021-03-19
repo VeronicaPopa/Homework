@@ -1,0 +1,67 @@
+body {
+    margin: 250px 150px;
+    background-color: rgb(46, 90, 113);
+    color: white;
+}
+
+h1 {
+    text-transform: capitalize;
+    text-align: center;
+    animation: header 5s ease-out infinite;
+    transform: translateY(-300px);
+}
+
+p {
+    padding: 50px;
+    font-size: 18px;
+    text-align: center;
+    animation: paragraph 5s ease-out infinite;
+    transform: translateX(-1250px);
+}
+
+button {
+    background-color: rgb(46, 90, 113);
+    border: 1px solid white;
+    font-size: 18px;
+    color: white;
+    padding: 15px;
+    margin-left: 45%;
+    animation: button 5s ease-out infinite;
+    opacity: 0;
+}
+
+@keyframes header {
+    0% {
+        transform: translateY(-300px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes paragraph {
+    0% {
+        transform: translateX(-1230px);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes button {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
