@@ -1,0 +1,92 @@
+body {
+    padding: 50px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    background-color: red;
+    transition: background-color 2s ease, transform 2s;
+    cursor: pointer;
+}
+
+.square:hover {
+    background-color: yellow;
+    transform: rotate(180deg)
+}
+
+.container-squares {
+    width: 100px;
+    transition: width 2s ease;
+}
+
+.container-squares:hover>div {
+    width: 300px;
+}
+
+.square1 {
+    width: 100%;
+    height: 100px;
+    margin: 50px;
+    background-color: red;
+    transition: width 2s ease;
+}
+
+.square2 {
+    width: 100%;
+    height: 100px;
+    margin: 50px;
+    background-color: blue;
+    transition: width 2s ease;
+    transition-delay: 2s;
+}
+
+.image1 {
+    transition: opacity 2s ease;
+    cursor: pointer;
+}
+
+.image1:hover {
+    opacity: 0.5;
+}
+
+.container-image {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.flip-card {
+    position: absolute;
+    transition: all 0.75s ease;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.flip-card:hover {
+    transform: rotateX(180deg);
+}
+
+.front {
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.back {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(116, 182, 245, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Syne Mono', monospace;
+    font-size: 40px;
+    font-weight: bold;
+    color: darkblue;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+}
