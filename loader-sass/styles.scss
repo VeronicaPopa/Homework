@@ -1,0 +1,44 @@
+@import "./colors";
+@mixin dots($color) {
+    height: 35px;
+    width: 35px;
+    background-color: $color;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
+    animation: load-dots 1.5s linear infinite;
+}
+
+body {
+    background-color: $primary;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading span {
+    &:first-child {
+        @include dots($firstClr);
+    }
+    &:nth-child(2) {
+        @include dots($secondClr);
+        animation-delay: 0.2s;
+    }
+    &:nth-child(3) {
+        @include dots($thirdClr);
+        animation-delay: 0.4s;
+    }
+}
+
+@keyframes load-dots {
+    25% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(60px);
+    }
+    75% {
+        transform: translateY(60px);
+    }
+}
