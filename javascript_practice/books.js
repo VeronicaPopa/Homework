@@ -30,10 +30,10 @@ let carti = [
     autor : "Benjamin Graham",
     statut : "citita"
   }
-]
-for (let i = 0; i < carti.length; i++){
+];
+for (let i = 0; i < carti.length; i++) {
      console.log(carti[i].titlu + ' by ' + carti[i].autor);
 }
-for (let i = 0; i < carti.length; i++){
+for (let i = 0; i < carti.length; i++) {
   console.log(carti[i].titlu + ' by ' + carti[i].autor + " - " + carti[i].statut);
 }
