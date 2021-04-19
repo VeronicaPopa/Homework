@@ -84,7 +84,12 @@ function onButtonClick() {
 
 submitBtn.addEventListener("click", onButtonClick);
 
-
+function onKeydown(event) {
+  if (event.key === "Enter") {
+    onButtonClick();
+  }
+}
+document.addEventListener("keydown", onKeydown); 
 
 
 
