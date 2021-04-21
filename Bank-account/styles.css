@@ -1,0 +1,76 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+  background-color: rgb(52, 58, 64);
+  color: white;
+}
+
+form {
+  margin-top: 30px;
+}
+
+th:first-child {
+  width: 10%;
+}
+
+th {
+  width: 30%;
+
+}
+
+th {
+  border-bottom: 2px solid rgb(234, 234, 234);
+  border-top: 2px solid rgb(234, 234, 234);
+
+}
+
+tr {
+  border-bottom: 1px solid rgb(234, 234, 234);
+  height: 40px;
+}
+
+#input {
+  width: 200px;
+  border: 2px solid rgb(234, 234, 234);
+
+}
+
+#transactions {
+  font-size: 14px;
+  text-align: left;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.main {
+  padding: 40px 20px 20px 20px;
+}
+
+.container {
+  width: 500px;
+  height: 800px;
+  margin: 0 auto;
+  border: 2px solid rgb(234, 234, 234);
+  border-radius: 5px;
+}
+
+.form-elements {
+  height: 35px;
+  margin-right: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
+
+
+
+
