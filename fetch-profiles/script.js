@@ -3,8 +3,8 @@ const profilesContainer = document.getElementsByClassName("profiles-container")[
 
 fetch('https://reqres.in/api/users')
   .then(response => response.json())
-  .then(post => {
-    for (let profile of post.data) {
+  .then(profiles => {
+    for (let profile of profiles.data) {
       const profileContainer = document.createElement("div");
       profileContainer.setAttribute("class", "profile-container");
       profilesContainer.appendChild(profileContainer);

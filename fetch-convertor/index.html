@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertor</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .main-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .convertor-container {
+        display: flex;
+
+      }
+
+      .first-currency-container,
+      .second-currency-container {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+      }
+
+      .equal {
+        font-size: 32px;
+        margin-top: 25px;
+        color: gray;
+      }
+
+      input {
+        height: 50px;
+        width: 300px;
+        font-size: 32px;
+        border: none;
+        /* border: 1px solid lightgray */
+        box-shadow: 0 0 2px 2px lightgray;
+        border-radius: 3px;
+
+      }
+
+      select {
+        margin-top: 10px;
+        border: 1px solid gray;
+        border-radius: 3px;
+
+      }
+
+      button {
+        margin-left: 20px;
+        width: 150px;
+        background-color: white;
+        border: 1px solid gray;
+        border-radius: 3px;
+        outline: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="convertor-container">
+        <div class="first-currency-container">
+          <input type="number" class="first-currency-input" />
+          <select name="currency" id="currency">
+          </select>
+        </div>
+        <span class="equal"> = </span>
+        <div class="second-currency-container">
+          <input type="number" class="second-currency-input" />
+          <select name="currency" id="currency">
+          </select>
+        </div>
+      </div>
+      <button class="convert">Convert</button>
+
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+
+  </body>
+
+</html>
