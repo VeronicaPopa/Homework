@@ -49,7 +49,7 @@ function currencyConvert() {
     const rates = currencies.rates;
     const currencyCodes = Object.keys(rates);
 
-    secondCurrencyInput.value = firstCurrencyInput.value * currencies.rates[toCurrencyCode];
+    secondCurrencyInput.value = firstCurrencyInput.value * rates[toCurrencyCode];
   })
 }
 
