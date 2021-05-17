@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch</title>
+    <style>
+      #twelveHrs,
+      #twentyFourHrs {
+        font-size: 24px;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid gray;
+        width: 500px;
+        height: 200px;
+        border-radius: 5px;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: monospace;
+      }
+
+      button {
+        height: 50px;
+        width: 200px;
+        font-size: 18px;
+        border-radius: 3px;
+        margin-right: 10px;
+        outline: none;
+      }
+
+      button:hover {
+        cursor: pointer;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <h1>Watch</h1>
+      <div id="twelveHrs"></div>
+      <div id="twentyFourHrs"></div>
+      <br />
+      <div class="btn-container">
+        <button id="twelveHrsBtn">Switch to 12 hour clock</button>
+        <button id="twentyFourHrsBtn">Switch to 24 hour clock</button>
+
+      </div>
+
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+
+</html>
